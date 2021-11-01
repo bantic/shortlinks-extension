@@ -1,0 +1,20 @@
+{
+  "name": "ShortcutLinks",
+  "description": "ShortcutLinks",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "host_permissions": ["*://go/*"]
+}

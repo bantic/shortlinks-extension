@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "http://adde.link/\\1"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://go/(.*)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
